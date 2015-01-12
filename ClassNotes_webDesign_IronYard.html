@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--  -->
+	<style type="text/css">
+		/**/
+		form {
+			border:2px solid black; padding:3px; width:600px;
+		}
+		h2 {
+			float:left; 
+			padding:30px;
+		}
+		form>fieldset {
+			border-color: #993333;		
+		}
+		form>fieldset:nth-of-type(2n){
+			border-color: #339933;		
+		}
+		form>fieldset:nth-of-type(3n){
+			border-color: #333399;		
+		}
+		fieldset>* {
+			display: inline-block;
+		}
+		fieldset {
+			display: block;
+			margin-bottom: 20px;
+		}
+		ul {
+			list-style: none;
+			width: 100%;
+
+		}
+		.hz-list li {
+			display: inline-block;
+		}
+		.hz-list.threes li {
+			width:30%;
+		}
+		span {
+			padding: 6px;
+			margin: 4px;
+			display: inline-block;
+			border: 1px solid black;
+		}
+		.p {
+			width: 90%;
+		}
+		.readmore {
+			float: right;
+		}
+		.halfer {
+			display: inline-block;
+			width:44.99%;
+			padding: 1%;
+		}
+		/**/
+	</style>
+	<!--  -->
+	<title></title>
+</head>
+<body>
+
+
+	<article class="Jan-12-2015">
+		<pre>
+
+			floats sometimes better than inline-block
+			inline-block can sometimes add small space between the elements
+
+
+			use   overflow:hidden;
+			or    clearfix;
+		</pre>
+
+		<form>
+			<fieldset>
+				<legend>div.header OR header</legend>
+				<h2>&lt;h1></h2>
+				<ul>
+					<li>width: 720px;</li>
+					<li>margin: 0 auto;</li>
+				</ul>
+			</fieldset>
+			<fieldset>
+				<legend>div.container OR main OR section</legend>
+				<fieldset>
+					<legend>ul.nav.clearfix OR nav</legend>
+					<ul class="hz-list threes">	
+						<li>	
+							<fieldset>
+								<legend>li</legend>
+								<span>a</span>
+							</fieldset>	
+						</li>
+						<li>	
+							<fieldset>
+								<legend>li</legend>
+								<span>a</span>
+							</fieldset>	
+						</li>
+						<li>	
+							<fieldset>
+								<legend>li</legend>
+								<span>a</span>
+							</fieldset>	
+						</li>
+					</ul>
+				</fieldset>
+
+				<fieldset>
+					<legend>div.homefeature OR aside</legend>
+					<h2>&lt;img></h2>
+						<div class="halfer">
+							<ul>
+								<li><span class="p">p</span></li>
+								<li><span class="readmore">a</span></li>
+							</ul>
+						</div>
+				</fieldset>
+
+				<fieldset>
+					<legend>section</legend>
+					<fieldset>
+						<legend>h2</legend>
+					</fieldset>
+
+					<fieldset>
+						<legend>p.intro</legend>
+					</fieldset>
+				</fieldset>
+
+				<fieldset class="halfer">
+					<legend>div.left OR article</legend>
+					<span class="p rando"></span>
+					<span class="p rando"></span>
+					<span class="p rando"></span>
+				</fieldset>
+
+				<fieldset class="halfer">
+					<legend>div.right OR article</legend>
+					<span class="p rando"></span>
+					<span class="p rando"></span>
+					<span class="p rando"></span>
+				</fieldset>
+
+
+			</fieldset>
+
+			<fieldset>
+				<legend>ul.footer OR footer</legend>
+				<span class="p rando"></span>
+				<span class="p rando"></span>
+			</fieldset>
+
+
+		</form>
+
+		<pre class="misc-notes">
+			only use div when nothing fits, it's an element of last resort
+		</pre>
+
+			<dl class="vocab-list">
+				<dt>VOCAB</dt>
+				<dt>div alertnatives for sections of page</dt>
+				<dd>be sure to have header within elemetns from this group</dd>
+				<dt>article</dt>
+				<dt>section</dt>
+				<dt>aside</dt>
+				<dt>nav</dt>
+			</dl>
+	</article>
+
+
+	<article class="Jan-09-2015">
+
+		<pre class="misc-notes">
+			930 width px
+			margin: 0 auto;
+
+			Bryant - urgent concern: MAC usage
+
+
+		</pre>	
+
+
+	</article>
+
+
+	<article class="Jan-08-2015">
+
+		<pre class="misc-notes">
+			CSS Box Model is a really good thing to understand early on when learning CSS. If you need a refresher later of what Greg was talking about with it then I recommend these resources:
+				2 quick articles on it: http://css-tricks.com/the-css-box-model/  http://css-tricks.com/box-sizing/
+				medium length article explaining (not as dry as official resource): http://learn.shayhowe.com/html-css/opening-the-box-model/
+				official resource: http://www.w3.org/TR/CSS2/box.html
+
+
+			CSS Floats:
+				http://css-tricks.com/all-about-floats/
+
+			margins between elements 'collapse' between left and right but NOT between left and right
+
+			a
+			a:visited
+			a:hover
+			a:active
+
+			<a href="index.php" id="nav-home" >Skinner Law Firm</a>
+
+anchor, "a" element with 'hover' and 'active' (active is when you click) : http://codepen.io/johndavidhunt/pen/EaZWzO 
+
+		</pre>	
+
+
+	</article>
+
+	<article class="Jan-07-2015">
+
+		<pre class="misc-notes lab-notes">
+			
+		</pre>
+		<pre class="misc-notes">
+			linking / paths
+			.
+			..
+			../
+			../../
+			../../index.html
+			images/sampson_dinosaur.jp
+
+			JPG/JPEG - (Joint Photographic Experts Group) - lots of colors, (can) use compression,
+			GIF - (Graphics Interchange Format) - preset number of colors (up to 16/32/.../256/512/etc colors)
+			PNG - (Portable Network Graphics) -'best of both worlds' and uses alpha channel (clear/transparent color)
+
+				raster - images that use pixels (jpg,gif,png)
+
+
+
+			SVG - (scalable vector graphics) - 
+
+				vector - point, coordinate based
+
+			&lt;img src="images/samson_dinosaur.jpg" alt="Scott Sampson and dinosaur">
+
+			CSS
+				p {color:blue;}
+				selector {attribute:value;}
+
+
+				color palette hexadecimal #FFCC33;
+
+						RGB
+						Red Green Blue
+
+						#rrggbb
+						#990000 = red;
+						#009900 = green;
+						#000099 = blue;
+
+						Wikipedia article on web colors: http://en.wikipedia.org/wiki/Web_colors
+						Showing browser support for transparent alpha colors (all modern EXCEPT for IE8): http://caniuse.com/#search=rgba
+
+						advanced articles on how color works (beast mode) 
+							http://lodev.org/cgtutor/color.html
+							http://blog.asmartbear.com/color-wheels.html
+							http://riftlabs.com/2010/09/how-rgb-light-works/
+
+						font-size: 16px;
+						font-size: 1em; // em = the height of capital M; usually around 16px high
+
+						browsers round-up to 3rd decimal place
+						font-size: 2.1874em;
+						font-size: 2.187em;
+
+						use em over px for font-size;
+
+						font-style: italic;
+						font-weight: bold;
+						color: purple;
+
+						Use selectors in CSS
+							you can use builtin html elements
+							...or you can use 'class' of element
+							...or 'id' of element
+
+
+						CSS specificity	
+						id 		class 	selector
+						100		10 		1
+
+
+
+
+		</pre>
+
+
+		<pre class="ask-Greg">
+			what about the labels? do they go after the id or name listed in 'for'?
+			IronYard site: alt text on images (logos for sponsor brands)
+
+				codpen? instructor mode?
+					move ahead, and be able to see everything else.
+		</pre>
+
+		<ul class="links">
+			<li>Cola UX MEETUP: <a href="http://www.meetup.com/Columbia-UX-Meetup/events/219063679/">http://www.meetup.com/Columbia-UX-Meetup/events/219063679/</a></li>
+		</ul>
+
+		<pre class="followup">
+			Jordan - github issues (delete link remote origin)  git remote -v git remote rm origin
+			somebody in class was having git related issues. IF for some reason you delete your github repository you can remove the origin reference to it locally with "git remote rm origin" at the terminal. then follow the github instructions for adding a new github repo to your local files. to check and see what is listed as your 'origin' you can use "git remote -v"
+
+			Tiye  - get emmet working some (restart ST)
+
+
+		</pre>
+
+	</article>
+
+
+	<article class="Jan-06-2015">
+
+		<h2>Day Two</h2>
+
+		<h3>Git</h3>
+
+		<pre class="commands">
+			git init
+			git add .
+			git commit -m "my custom message"
+			git push
+
+			git status
+			git add '*.txt'
+			
+			git log
+			git remote add origin
+			git push
+			git push -u origin master
+			git diff
+			git diff --staged
+			git diff HEAD
+
+			git reset octofamily/octodog.txt
+			git checkout -- octocat.txt
+			PATH=/usr/local/git/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:sbin
+
+			git config --list
+			git config 
+			git config --global color.ui auto
+			git config --global user.name "John Doe"
+			git config --global user.email "JohnDoe@gmail.com"
+
+			git remote add origin git@github.com:johndavidhunt/townhall.git
+			git push -u origin master
+
+		</pre>
+
+		<pre class="misc-notes">
+			game with teams, showing progress tracking with git commits etc.
+			links for looking up HMTL elements:
+				https://developers.whatwg.org/
+				https://developer.mozilla.org/en-US/
+				http://www.w3.org/TR/html5/
+				http://www.w3.org/TR/REC-html40/
+				http://www.w3.org/TR/REC-html40/struct/global.html
+				http://www.w3.org/TR/REC-html40/index/elements.html
+
+		</pre>
+
+		<pre class="emails">
+			Giovanni Difeterici &lt;giovanni@theironyard.com>
+			Abby Starnes &lt;ordettestarnes@gmail.com>,
+			Bella Wenum &lt;bella.wenum@gmail.com>,
+			Meghan Lee Smith &lt;suleml11@gmail.com>,
+			Tiye Gordon &lt;tiyea.gordon@gmail.com>,
+			Brian Slyce &lt;brianslyce@live.com>,
+			Bryant Caldwell &lt;cwellionaire@gmail.com>,
+			"M. Phoenixx Pendergrass" &lt;mphoenixxp@gmail.com>,
+			Matthew Teague &lt;teaguem27@yahoo.com>,
+			George Perez &lt;grezmedia@icloud.com>,
+			"BENNETT, THOMAS J" &lt;bennet32@email.sc.edu>,
+			Zach Miller &lt;zachm3d@gmail.com>,
+			Greg Lunn &lt;greg@theironyard.com>,
+			john@unmatchedstyle.com
+
+		</pre>
+
+		<pre class="ask-Greg">
+			what about shortcut keys in sublime text (multiple cursors etc again)
+			what to do about those getting behind, (get higher/taller tv screen? - follow along better?)
+
+
+		</pre>
+
+	</article>
+
+<hr>
+
+	<article>
+
+		<header>
+			<h1>class notes - <time>January 5, 2015</time></h1>
+			<h3>Iron Yard Academy - Web Design Course - @SOCO</h3>
+			<dl>
+				<dt>Instructor</dt> <dd>Gregg Lunn</dd>
+				<dt>Campus Director</dt> <dd>Gio DiFetterricci</dd>
+				<dt>Campus Director</dt> <dd>Gene Crawford</dd>
+				<dt>Teaching Assistant</dt> <dd>John David Hunt</dd>
+			</dl>
+		</header>
+		
+		<main class="notes">
+			<pre>
+				class notes.
+			</pre>
+			<a href="http://greglunn.github.io/webdesign/">http://greglunn.github.io/webdesign/</a>
+
+			<pre class="misc-notes">
+				possible lunch day together?
+				hobbyshops
+				natural river tour
+				they think they like UX UI
+
+				installed:
+					Sublime Text (3)
+						Install Package
+						TAG
+						EMMET
+						SASS
+
+				What is HTML vs CSS?
+				KeyFobs
+
+				http://www.w3.org/TR/html5/
+				https://developers.whatwg.org/
+
+
+				listen to screen reader
+
+				always must be valid (run through validator)
+
+				be able to explain it to others.
+
+				block vs inline-block
+
+			</pre>
+
+
+			<dl class="vocab-list">
+				<dt>VOCAB</dt>
+				<dt>!DOCTYPE</dt>
+				<dt>html</dt>
+				<dt>meta charset="utf-8"</dt>
+				<dt>head</dt>
+				<dt>title</dt>
+				<dt>body</dt>
+				<dt>p</dt>
+				<dt>h1..h6</dt>
+				<dt>strong</dt>
+				<dt>b</dt>
+				<dt>em</dt>
+				<dt>i</dt>
+				<dt>blockquote</dt>
+				<dt>a href="" target="_blank"</dt>
+				<dt>ul li</dt>
+				<dt>ol li</dt>
+				<dt>dl dd dt</dt>
+				<dt>table th tr td</dt>
+
+			</dl>
+
+			<div class="real-work">
+				<pre>
+&lt;!DOCTYPE html>
+
+&lt;html>
+	&lt;head>
+		&lt;meta charset="utf-8">
+		&lt;title>Title of Page&lt;/title>
+
+	&lt;/head>
+
+	&lt;body>
+	&lt;/body>
+
+&lt;/html>
+
+
+
+				</pre>
+
+<!-- 				<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Title of Page</title>
+
+	</head>
+
+	<body>
+	</body>
+
+</html>
+
+ -->
+
+
+			</div>
+
+
+			<ul class="links">
+				<li><h3>links to bookmark - go over later</h3> </li>
+				<li><a href="http://www.w3.org/TR/html5/">http://www.w3.org/TR/html5/</a></li>
+				<li><a href="https://developers.whatwg.org/">https://developers.whatwg.org/</a></li>
+			<li><a href="http://validator.w3.org/">http://validator.w3.org/</a></li>
+			</ul>
+
+
+
+
+
+			<pre class="for-Gregg">
+				speak-up
+				am i going to be on the listed contact info??
+
+			</pre>
+
+			<pre class="for-Gene-Gio">
+				is it ok for them to be here 24/7?
+				explain flexdesk
+				video camera (security)
+
+			</pre>
+
+		</main>
+
+
+		<footer>
+			<div class="homework-list">
+
+			</div>
+		</footer>
+
+	</article>
+
+
+
+</body>
+</html>
